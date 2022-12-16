@@ -76,6 +76,7 @@ void op_pall(stack_t **stack, unsigned int line_number);
 void op_pint(stack_t **stack, unsigned int line_number);
 void op_pop(stack_t **stack, unsigned int line_number);
 void op_swap(stack_t **stack, unsigned int line_number);
+size_t getline(char **lineptr, size_t *n, FILE *stream);
 
 char **split_line(char *line);
 void (*get_op_func(char *s))(stack_t**, unsigned int);
